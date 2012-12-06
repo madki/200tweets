@@ -1,0 +1,18 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+        <title> 200 tweets</title>
+    </head>
+
+    <body>
+        <h1>{{user}}</h1>
+        <h2>200 tweets</h2>
+        
+        <div id = "tweets">
+        {% for t in tweets %}
+        	<div id='tweet'>{{ t.text }}</div>
+    	{% endfor %}
+        
+        </div>     
+    </body>
+
+</html>
